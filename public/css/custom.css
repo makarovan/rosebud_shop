@@ -1,0 +1,74 @@
+.productRow{
+	display: block;
+	overflow: hidden;
+}
+.product-container{
+	margin-top: 20px;
+}
+#prodDesc{
+	margin-top: 0;
+}
+#bootstrap-overrides .left-block{
+	padding: 5px; height: 238px; overflow: hidden;
+}
+#bootstrap-overrides .product-img img{
+
+}
+
+#registrationForm{
+	float: left;
+	width: 40%;
+
+	
+}
+#registrationForm .customer-login{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#loginForm{
+	float: left;
+	width: 50%;
+}
+#loginForm .customer-login{
+	padding: 0;
+	width: 80%;
+}
+
+
+@media (max-width: 1000px) {
+	.header-center .navbar-logo{
+		width: 50%;
+	}
+
+	#sosearchpro{
+		width: 50%;
+	}
+
+	#content{
+		margin:0;
+	}
+
+	.header-bottom .header-bottom-right{
+		width: 0;
+	}
+
+	#registrationForm{
+		float: none;
+		width: 60%;
+		display: block;
+		margin: 0 auto;
+	}
+
+	#loginForm{
+		float: none;
+		width: 60%;
+		display: block;
+		margin: 0 auto 40px;
+	}
+	#loginForm .customer-login{
+		width: 100%;
+	}
+}
+
