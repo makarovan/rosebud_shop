@@ -584,7 +584,8 @@ ul.megamenu li .sub-menu .content .hover-menu .menu ul ul li {
     }
 
     ul.megamenu > li.search ,.fa-angle-right,.caret {
-        display: none;
+        display: block;
+        float:left;
     }
 
     .responsive ul.megamenu > li > a {

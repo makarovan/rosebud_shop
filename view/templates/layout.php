@@ -43,14 +43,14 @@
 	<link id="color_scheme" href="public/css/home2.css" rel="stylesheet">
 	<!-- <link href="css/responsive.css" rel="stylesheet"> -->
 
-	<!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
 
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   	<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="public/js/jquery.js" type="text/javascript"></script>
-	<script src="public/js/bootstrap.js" type="text/javascript"></script> -->
+	<script src="public/js/bootstrap.js" type="text/javascript"></script> 
 	
 	
 </head>
@@ -63,8 +63,8 @@
 				<!-- Header Top -->
 				<div class="header-top">
 					<div class="container">
-						<div class="row">
-							<div class="header-top-right collapsed-block text-right  col-sm-6 col-xs-6 compact-hidden" style="width: 30%;">
+						<div class="row" >
+							<div class="header-top-right collapsed-block text-right  col-sm-6 col-xs-6 compact-hidden" id="headerTop">
 								<div class="tabBlock" id="TabBlock-1">
 									<?php 
 										if (!isset($_SESSION['role'])) {
@@ -117,428 +117,6 @@
 				<div class="header-bottom">
 					<div class="container">
 						<div class="row" style="width: 103%; margin-left: 4%;">
-							<!-- sidebar -->
-							<!-- <div class="sidebar-menu col-md-3  col-xs-6 hidden-xs" style="width:22.5%;">
-								<div class="responsive so-megamenu ">
-									<div class="so-vertical-menu no-gutter compact-hidden">
-										<nav class="navbar-default">
-											<div class="container-megamenu vertical ">
-												<div id="menuHeading">
-													<div class="megamenuToogle-wrapper">
-														<div class="megamenuToogle-pattern">
-															<div class="container">
-																<div>
-																	<span></span>
-																	<span></span>
-																	<span></span>
-																</div>
-																All Categories							
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="navbar-header">
-													<button id="show-verticalmenu" data-toggle="collapse" class="navbar-toggle fa fa-list-alt">
-														
-													</button>
-												</div>
-												<div class="vertical-wrapper" >
-													<span id="remove-verticalmenu" class="fa fa-times"></span>
-													<div class="megamenu-pattern">
-														<div class="container">
-															<ul class="megamenu">
-																<li class="item-vertical style1 with-sub-menu hover">
-																	<p class="close-menu"></p>
-																	<a href="#" class="clearfix">
-																		<span>Automotive &amp; Motocrycle</span>
-																	</a>
-																	<div class="sub-menu" data-subwidth="100" style="width: 900px; display: none; right: 0px;">
-																		<div class="content" style="display: none;">
-																			<div class="row">
-																				<div class="col-sm-12">
-																					<div class="row">
-																						<div class="col-lg-4 col-sm-6 static-menu">
-																							<div class="menu">
-																								<ul>
-																									<li>
-																										<a href="#" class="main-menu">Apparel</a>
-																										<ul>
-																											<li><a href="#">Accessories for Tablet PC</a></li>
-																											<li><a href="#">Accessories for i Pad</a></li>
-																											<li><a href="#">Accessories for iPhone</a></li>
-																											<li><a href="#">Bags, Holiday Supplies</a></li>
-																											<li><a href="#">Car Alarms and Security</a></li>
-																											<li><a href="#">Car Audio &amp; Speakers</a></li>
-																										</ul>
-																									</li>
-																									<li>
-																										<a href="#" class="main-menu">Cables &amp; Connectors</a>
-																										<ul>
-																											<li><a href="#">Cameras &amp; Photo</a></li>
-																											<li><a href="#">Electronics</a></li>
-																											<li><a href="#">Outdoor &amp; Traveling</a></li>
-																										</ul>
-																									</li>
-																								</ul>
-																							</div>
-																						</div>
-																						<div class="col-lg-4 col-sm-6 static-menu">
-																							<div class="menu">
-																								<ul>
-																									<li>
-																										<a href="#" class="main-menu">Camping &amp; Hiking</a>
-																										<ul>
-																											<li><a href="#">Earings</a></li>
-																											<li><a href="#">Shaving &amp; Hair Removal</a></li>
-																											<li><a href="#">Salon &amp; Spa Equipment</a></li>
-																										</ul>
-																									</li>
-																									<li>
-																										<a href="#" class="main-menu">Smartphone &amp; Tablets</a>
-																										<ul>
-																											<li><a href="#">Sports &amp; Outdoors</a></li>
-																											<li><a href="#">Bath &amp; Body</a></li>
-																											<li><a href="#">Gadgets &amp; Auto Parts</a></li>
-																										</ul>
-																									</li>
-																								</ul>
-																							</div>
-																						</div>
-																						<div class="col-lg-4 col-sm-6 static-menu">
-																							<div class="menu">
-																								<ul>
-																									<li>
-																										<a href="#" class="main-menu">Bags, Holiday Supplies</a>
-																										<ul>
-																											<li><a href="#" onclick="window.location = '18_46';">Battereries &amp; Chargers</a></li>
-																											<li><a href="#" onclick="window.location = '24_64';">Bath &amp; Body</a></li>
-																											<li><a href="#" onclick="window.location = '18_45';">Headphones, Headsets</a></li>
-																											<li><a href="#" onclick="window.location = '18_30';">Home Audio</a></li>
-																										</ul>
-																									</li>
-																								</ul>
-																							</div>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</li>
-																<li class="item-vertical">
-																	<p class="close-menu"></p>
-																	<a href="#" class="clearfix">
-																		
-																		<span>Electronic</span>
-
-																	</a>
-																</li>
-																<li class="item-vertical with-sub-menu hover">
-																	<p class="close-menu"></p>
-																	<a href="#" class="clearfix">
-																		<span class="label"></span>
-																		
-																		<span>Sports &amp; Outdoors</span>
-																		
-																	</a>
-																	<div class="sub-menu" data-subwidth="60" style="width: 540px; display: none; right: 0px;">
-																		<div class="content" style="display: none;">
-																			<div class="row">
-																				<div class="col-md-6">
-																					<div class="row">
-																						<div class="col-md-12 static-menu">
-																							<div class="menu">
-																								<ul>
-																									<li>
-																										<a href="#" onclick="window.location = '81';" class="main-menu">Mobile Accessories</a>
-																										<ul>
-																											<li><a href="#" onclick="window.location = '33_63';">Gadgets &amp; Auto Parts</a></li>
-																											<li><a href="#" onclick="window.location = '24_64';">Bath &amp; Body</a></li>
-																											<li><a href="#" onclick="window.location = '17';">Bags, Holiday Supplies</a></li>
-																										</ul>
-																									</li>
-																									<li>
-																										<a href="#" onclick="window.location = '18_46';" class="main-menu">Battereries &amp; Chargers</a>
-																										<ul>
-																											<li><a href="#" onclick="window.location = '25_28';">Outdoor &amp; Traveling</a></li>
-																											<li><a href="#" onclick="window.location = '80';">Flashlights &amp; Lamps</a></li>
-																											<li><a href="#" onclick="window.location = '24_66';">Fragrances</a></li>
-																										</ul>
-																									</li>
-																									<li>
-																										<a href="#" onclick="window.location = '25_31';" class="main-menu">Fishing</a>
-																										<ul>
-																											<li><a href="#" onclick="window.location = '57_73';">FPV System &amp; Parts</a></li>
-																											<li><a href="#" onclick="window.location = '18';">Electronics</a></li>
-																											<li><a href="#" onclick="window.location = '20_76';">Earings</a></li>
-																											<li><a href="#" onclick="window.location = '33_60';">More Car Accessories</a></li>
-																										</ul>
-																									</li>
-																								</ul>
-																							</div>
-																						</div>
-																					</div>
-																				</div>
-																				<div class="col-md-6">
-																					<div class="row banner">
-																						<a href="#">
-																							<img src="img/demo/cms/menu_bg2.jpg" alt="banner1">
-																						</a>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</li>
-																<li class="item-vertical with-sub-menu hover">
-																	<p class="close-menu"></p>
-																	<a href="#" class="clearfix">
-																		
-																		<span>Health &amp; Beauty</span>
-																		
-																	</a>
-																	<div class="sub-menu" data-subwidth="100" style="width: 900px; display: none; right: 0px;">
-																		<div class="content" style="display: none;">
-																			<div class="row">
-																				<div class="col-md-12">
-																					<div class="row">
-																						<div class="col-lg-4 col-sm-6 static-menu">
-																							<div class="menu">
-																								<ul>
-																									<li>
-																										<a href="#" class="main-menu">Car Alarms and Security</a>
-																										<ul>
-																											<li><a href="#">Car Audio &amp; Speakers</a></li>
-																											<li><a href="#">Gadgets &amp; Auto Parts</a></li>
-																											<li><a href="#">Gadgets &amp; Auto Parts</a></li>
-																											<li><a href="#">Headphones, Headsets</a></li>
-																										</ul>
-																									</li>
-																									<li>
-																										<a href="24" onclick="window.location = '24';" class="main-menu">Health &amp; Beauty</a>
-																										<ul>
-																											<li>
-																												<a href="#">Home Audio</a>
-																											</li>
-																											<li>
-																												<a href="#">Helicopters &amp; Parts</a>
-																											</li>
-																											<li>
-																												<a href="#">Outdoor &amp; Traveling</a>
-																											</li>
-																											<li>
-																												<a href="#">Toys &amp; Hobbies</a>
-																											</li>
-																										</ul>
-																									</li>
-																								</ul>
-																							</div>
-																						</div>
-																						<div class="col-lg-4 col-sm-6 static-menu">
-																							<div class="menu">
-																								<ul>
-																									<li>
-																										<a href="#" class="main-menu">Electronics</a>
-																										<ul>
-																											<li>
-																												<a href="#">Earings</a>
-																											</li>
-																											<li>
-																												<a href="#">Salon &amp; Spa Equipment</a>
-																											</li>
-																											<li>
-																												<a href="#">Shaving &amp; Hair Removal</a>
-																											</li>
-																											<li>
-																												<a href="#">Smartphone &amp; Tablets</a>
-																											</li>
-																										</ul>
-																									</li>
-																									<li>
-																										<a href="#" class="main-menu">Sports &amp; Outdoors</a>
-																										<ul>
-																											<li>
-																												<a href="#">Flashlights &amp; Lamps</a>
-																											</li>
-																											<li>
-																												<a href="#">Fragrances</a>
-																											</li>
-																											<li>
-																												<a href="#">Fishing</a>
-																											</li>
-																											<li>
-																												<a href="#">FPV System &amp; Parts</a>
-																											</li>
-																										</ul>
-																									</li>
-																								</ul>
-																							</div>
-																						</div>
-																						<div class="col-lg-4 col-sm-6 static-menu">
-																							<div class="menu">
-																								<ul>
-																									<li>
-																										<a href="#" class="main-menu">More Car Accessories</a>
-																										<ul>
-																											<li>
-																												<a href="#">Lighter &amp; Cigar Supplies</a>
-																											</li>
-																											<li>
-																												<a href="#">Mp3 Players &amp; Accessories</a>
-																											</li>
-																											<li>
-																												<a href="#">Men Watches</a>
-																											</li>
-																											<li>
-																												<a href="#">Mobile Accessories</a>
-																											</li>
-																										</ul>
-																									</li>
-																									<li>
-																										<a href="#" class="main-menu">Gadgets &amp; Auto Parts</a>
-																										<ul>
-																											<li>
-																												<a href="#">Gift &amp; Lifestyle Gadgets</a>
-																											</li>
-																											<li>
-																												<a href="#">Gift for Man</a>
-																											</li>
-																											<li>
-																												<a href="#">Gift for Woman</a>
-																											</li>
-																											<li>
-																												<a href="#">Gift for Woman</a>
-																											</li>
-																										</ul>
-																									</li>
-																								</ul>
-																							</div>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</li>
-																<li class="item-vertical css-menu with-sub-menu hover">
-																	<p class="close-menu"></p>
-																	<a href="#" class="clearfix">
-
-																		
-																		<span>Smartphone &amp; Tablets</span>
-																		
-																	</a>
-																	<div class="sub-menu" data-subwidth="30" style="width: 270px; display: none; right: 0px;">
-																		<div class="content" style="display: none;">
-																			<div class="row">
-																				<div class="col-sm-12">
-																					<div class="row">
-																						<div class="col-sm-12 hover-menu">
-																							<div class="menu">
-																								<ul>
-																									<li>
-																										<a href="#" class="main-menu">Headphones, Headsets</a>
-																									</li>
-																									<li>
-																										<a href="#" class="main-menu">Home Audio</a>
-																									</li>
-																									<li>
-																										<a href="#" class="main-menu">Health &amp; Beauty</a>
-																									</li>
-																									<li>
-																										<a href="#" class="main-menu">Helicopters &amp; Parts</a>
-																									</li>
-																									<li>
-																										<a href="#" class="main-menu">Helicopters &amp; Parts</a>
-																									</li>
-																								</ul>
-																							</div>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</li>
-																<li class="item-vertical">
-																	<p class="close-menu"></p>
-																	<a href="#" class="clearfix">
-																		
-																		<span>Flashlights &amp; Lamps</span>
-
-																	</a>
-																</li>
-																<li class="item-vertical">
-																	<p class="close-menu"></p>
-																	<a href="#" class="clearfix">
-																		
-																		<span>Camera &amp; Photo</span>
-																	</a>
-																</li>
-																<li class="item-vertical">
-																	<p class="close-menu"></p>
-																	<a href="#" class="clearfix">
-																		
-																		<span>Smartphone &amp; Tablets</span>
-																	</a>
-																</li>
-																<li class="item-vertical item-vertical-hide" style="display: none;">
-																	<p class="close-menu"></p>
-																	<a href="#" class="clearfix">
-																		
-																		<span>Outdoor &amp; Traveling Supplies</span>
-																	</a>
-																</li>
-																<li class="item-vertical item-vertical-hide" style="display: none;">
-																	<p class="close-menu"></p>
-
-																	<a href="#" class="clearfix">
-
-																		<span>Health &amp; Beauty</span>
-																	</a>
-																</li>
-																<li class="item-vertical item-vertical-hide" style="display: none;">
-																	<p class="close-menu"></p>
-																	<a href="#" class="clearfix">
-																		
-																		<span>Toys &amp; Hobbies </span>
-																	</a>
-																</li>
-																<li class="item-vertical item-vertical-hide" style="display: none;">
-																	<p class="close-menu"></p>
-																	<a href="#" class="clearfix">
-																		
-																		<span>Jewelry &amp; Watches</span>
-																	</a>
-																</li>
-																<li class="item-vertical item-vertical-hide" style="display: none;">
-																	<p class="close-menu"></p>
-																	<a href="#" class="clearfix">
-																		
-																		<span>Bags, Holiday Supplies</span>
-																	</a>
-																</li>
-																<li class="item-vertical item-vertical-hide" style="display: none;">
-																	<p class="close-menu"></p>
-
-																	<a href="#" class="clearfix">
-																		
-																		<span>More Car Accessories</span>
-																	</a>
-																</li>
-																<li class="loadmore">
-																	<i class="fa fa-plus-square-o"></i>
-																	<span class="more-view">More Categories</span>
-																</li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
-										</nav>
-									</div>
-								</div>
-							</div> -->
 							<!-- Main menu -->
 							<div class="megamenu-hori header-bottom-right  col-md-9 col-sm-6 col-xs-6 "  style="margin-top:0; margin-left:-1%; padding-right:0;">
 								<div class="responsive so-megamenu ">
@@ -609,7 +187,7 @@
 				<!-- Footer Top Container -->
 				<section class="footer-top">
 					<div class="container content">
-						<div class="">
+						<div>
 							<div class=" collapsed-block ">
 								<div class="module clearfix">
 									<h3 class="modtitle">Свяжитесь с нами</h3>
@@ -663,25 +241,27 @@
 									<!-- End Social widgets -->
 								</div>
 							</div>
-							<div class=" box-information">
-								<div class="module clearfix">
-									<h3 class="modtitle">Заказы</h3>
-									<div class="modcontent">
-										<ul class="menu">
-											<li><a href="ordersByUser">Мои заказы</a></li>
-											<li><a href="ordersFromUser">Заказы</a></li>
-										</ul>
+							<div id="footerColumn">
+								<div class=" box-information">
+									<div class="module clearfix">
+										<h3 class="modtitle">Заказы</h3>
+										<div class="modcontent">
+											<ul class="menu">
+												<li><a href="ordersByUser">Мои заказы</a></li>
+												<li><a href="ordersFromUser">Заказы</a></li>
+											</ul>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class=" box-extras">
-								<div class="module clearfix">
-									<h3 class="modtitle">Дополнительно</h3>
-									<div class="modcontent">
-										<ul class="menu">
-											<li><a href="contact">Свяжитесь с нами</a></li>
-											<li><a href="my_account">Личный кабинет</a></li>
-										</ul>
+								<div class=" box-extras">
+									<div class="module clearfix">
+										<h3 class="modtitle">Дополнительно</h3>
+										<div class="modcontent">
+											<ul class="menu">
+												<li><a href="contact">Свяжитесь с нами</a></li>
+												<li><a href="my_account">Личный кабинет</a></li>
+											</ul>
+										</div>
 									</div>
 								</div>
 							</div>

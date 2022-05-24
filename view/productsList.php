@@ -8,14 +8,6 @@ if (isset($text)) {
 	$title = 'Поиск по запросу: '.$text;
 }
 
-// if (!empty($_GET['min'])) {
-//     $min = $_GET['min'];
-// }
-
-// if (!empty($_GET['max'])) {
-//     $max = $_GET['max'];
-// }
-
 ?>
 
 <div class="main-container container" style="margin-top: 0;">
@@ -55,13 +47,13 @@ if (isset($text)) {
 								</select>
 
 								<legend>Цена:</legend>
-								<div class="range">
-									<input type="number" name="minPrice" value="10" class="form-control" style="width: 45%; float: left; height: 28px; "> 
-									<p style="float: left; width: 10%; padding: 5px 9px;"> - </p>
-									<input type="number" name="maxPrice" value="100" class="form-control" style="width: 45%; float: left; height: 28px;">
+								<div class="range" style="width:100%; overflow:hidden;">
+									<input type="number" name="minPrice" value="10" class="form-control" style="width: 40%; float: left; height: 28px; "> 
+									<p style="float: left; width: 20%; padding: 5px 0; text-align:center;"> - </p>
+									<input type="number" name="maxPrice" value="100" class="form-control" style="width: 40%; float: left; height: 28px;">
 								</div>
-							<div style="padding-right: 100px;">
-								<button type="submit" class="btn btn-primary btn-md" style="width:220px;"><i class="fa fa-search"></i> Поиск</button>
+							<div style="">
+								<button type="submit" class="btn btn-primary btn-md" style="width:100%;"><i class="fa fa-search"></i> Поиск</button>
 							</div>
 							
 						</form>
@@ -72,7 +64,7 @@ if (isset($text)) {
 					<!--Left Part End -->
 
 					<!--Middle Part Start-->
-					<div id="content" class="col-md-9 col-sm-8 type-2" style="width: 70%; margin-top:-10px;">
+					<div id="content" class="col-md-9 col-sm-8 type-2" style="width: 60%; margin-top:-10px;">
 						<div class="products-category">
 							<!--changed listings-->
 							<div class="products-list grid">
@@ -83,15 +75,7 @@ if (isset($text)) {
 												<div class="product-item-container">
 													<div class="left-block">
 														<div class="product-image-container  second_img " title="Перейти к товару">';
-															echo'<a href="detail?id='.$row['idProduct'].'" class="product-img"><img src="img/'.$row['img'].'" alt="" style=" max-height:350px; width:90%; margin: 0 5%;"></a>';
-																	
-															// <div class="hover">
-															// 	<ul>
-															// 		 <li class="icon-heart"><a class="wishlist" type="button" data-toggle="tooltip" title="" onclick="wishlist.add('42');" data-original-title="Add to Wish List"><i class="fa fa-heart"></i></a></li>
-															// 		 <li class="icon-exchange"><a class="compare" type="button" data-toggle="tooltip" title="" onclick="compare.add('42');" data-original-title="Compare this Product"><i class="fa fa-exchange"></i></a></li>
-															// 		<li class="icon-search"><a class="quickview iframe-link " data-fancybox-type="iframe" href="quickview.html">  <i class="fa fa-search" aria-hidden="true"></i></a></li>
-															// 	</ul>
-															// </div>
+															echo'<a href="detail?id='.$row['idProduct'].'" class="product-img"><img src="img/'.$row['img'].'" alt="" ></a>';
 														echo'</div>
 													</div>
 													<div class="right-block">

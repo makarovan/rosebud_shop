@@ -20,7 +20,7 @@ class ModelContact{
 			if (trim($comment)=="") {
 				$errorString.="Напишите свое сообщение";
 			}
-			$subject = "Сообщение с сайта Rosebud Shop";
+			$subject = $_POST['subject'];
 
 			if ($errorString =="") {
 				$message = "Привет!<br>

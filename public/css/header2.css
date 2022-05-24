@@ -316,4 +316,10 @@ BLOCK HEADER
   .table > tbody > tr > td {
     padding: 3px; } }
 
+
+@media (max-width: 390px) {
+  #sosearchpro{
+		padding-top:0;
+	}
+}
 /*# sourceMappingURL=header2.css.map */
