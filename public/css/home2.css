@@ -3854,7 +3854,8 @@ ul.yt-accordion li.accordion-group h3.accordion-heading:hover .fa {
     .left-content-product .content-product-right .product-label .stock span {
       font-weight: 700; }
     .left-content-product .content-product-right .product-label .stock .instock {
-      color: #3eb94f; }
+      color: #3eb94f;
+      }
     .left-content-product .content-product-right .product-label .stock p {
       margin: 25px 0;
       font-weight: 700; }

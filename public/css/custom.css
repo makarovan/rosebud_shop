@@ -2,24 +2,28 @@
 	display: block;
 	overflow: hidden;
 }
-.product-container{
-	margin-top: 20px;
+#productImg{
+	float: left;
+	margin-right: 20px; 
+	width: 45%;
 }
 #prodDesc{
 	margin-top: 0;
+	display: inline-block;
+}
+#productDesc{
+	width: 50%;
+}
+.outofstock{
+	color: red;
 }
 #bootstrap-overrides .left-block{
 	padding: 5px; height: 238px; overflow: hidden;
-}
-#bootstrap-overrides .product-img img{
-
 }
 
 #registrationForm{
 	float: left;
 	width: 40%;
-
-	
 }
 #registrationForm .customer-login{
 	margin: 0;
@@ -101,4 +105,15 @@
 	.footer-container .footer-top .collapsed-block .share-icon ul li{
 		width: 20%;
 	}
+	#productImg{
+		float:none;
+		margin: 0 auto;
+		display: block;
+	}
+	#productDesc{
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+	
 }
