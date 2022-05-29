@@ -4,7 +4,7 @@
 
 
 <div class="col-xs-9" style="float: left; width: 80%;">
-	<h1 class="text-uppercase">Заказы</h1>
+	<h1 class="text-uppercase">Продажи</h1>
 		<div class="table-responsive">
 			<table class="table table-bordered">
 				<thead>

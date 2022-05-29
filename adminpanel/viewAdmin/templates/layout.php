@@ -82,7 +82,7 @@ if (isset($_SESSION['userId']) && isset($_SESSION['role']) && $_SESSION['role']!
 						<div class="row">
 							<!-- Logo -->
 							<div class="navbar-logo col-md-3 col-sm-12 col-xs-7">
-								<a href="index.html"><img src="../img/demo/logo/logo.png" title="Your Store" alt="Your Store"></a>
+								<a href="./index"><img src="../img/demo/logo/logo.png" title="Your Store" alt="Your Store"></a>
 							</div>
 							<!-- //end Logo -->
 
@@ -116,46 +116,15 @@ if (isset($_SESSION['userId']) && isset($_SESSION['role']) && $_SESSION['role']!
 			<aside style="width: 20%; margin-left: 5%;">
 				<div class="col-md-6 col-lg-6">
 					<ul class="simple-ul">
-						<li><a href="usersAction">users</a></li>
-						<li><a href="categoryAction">categories</a></li>
-						<li><a href="productsAction">products</a></li>
+						<li><a href="usersAction">Пользователи</a></li>
+						<li><a href="categoryAction">Категории</a></li>
+						<li><a href="productsAction">Товары</a></li>
+						<li><a href="ordersAction">Заказы</a></li>
 					</ul>
 				</div>
 			</aside>
 			<main style="width: 60%; margin-left: 10%; float: left;">
 				<?php if (isset($content)) echo $content; ?>
-				<!-- <div class="table-responsive">
-					<table class="table table-bordered">
-						<thead>
-							<tr>
-								<th style="width: 50px;">#</th>
-								<th style="width: 100px;">email</th>
-								<th  style="width: 100px;">fullname</th>
-								<th  style="width: 50px;">?</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th scope="row">1</th>
-								<td>shop@shop.ee</td>
-								<td>Seth</td>
-								<td> <a href="user_change.html">изменить</a> </td>
-							</tr>
-							<tr>
-								<th scope="row">2</th>
-								<td>user@user.ee</td>
-								<td>Barbal</td>
-								<td><a href="user_change.html">изменить</a> </td>
-							</tr>
-							<tr>
-								<th scope="row">3</th>
-								<td>user2@user.ee</td>
-								<td>Guju</td>
-								<td><a href="user_change.html">изменить</a> </td>
-							</tr>
-						</tbody>
-					</table>
-				</div> -->
 			</main>
 		</div>
 	</div>	

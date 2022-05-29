@@ -2,7 +2,7 @@
 ob_start();
 ?>
 
-<h2>Products</h2>
+<h2>Пользователи</h2>
 <div class="table-responsive">
 	<table class="table table-bordered">
 		<thead>
@@ -37,20 +37,6 @@ ob_start();
 		</tbody>
 	</table>
 </div> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <?php
 $content = ob_get_clean();

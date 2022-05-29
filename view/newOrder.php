@@ -12,7 +12,7 @@ ob_start();
         			<div class="alert alert-success"><i class="fa fa-check-circle"></i>
 						<strong>Заказ сделан.</strong>
 						<?php
-							echo '<a href="myOrders?id='.$_SESSION['userId'].'"> Мои заказы</a>';
+							echo '<a href="myOrders?id='.$_SESSION['userId'].'"> Мои покупки</a>';
 						?>
         			</div>
        	<?php
@@ -32,40 +32,40 @@ ob_start();
 
         <form action="newOrderResult?id=<?php echo $product['idProduct']; ?>" method="POST" enctype="multipart/form-data">	
         	<div class="product-view product">
-				<div class="left-content-product col-lg-12 col-xs-12">
+				<div class="left-content-product col-lg-12 col-xs-12" style="margin-bottom:0;">
 					<div class="product">
 						<div class="title-product">
 							<?php
 								echo '<h2>'.$product['name'].'</h1>';
 							?>
 						</div>
-						<div style="float: left; margin-right: 20px; width: 30%;">
+						<div id="productImg">
 							<div>
 								<?php
 									echo '<img src="img/'.$product['img'].'" style="width:400px;">';
 								?>
 							</div>
 						</div>
-						<div class="content-product-right col-sm-6 col-xs-12" style="width: 50%;">	
-							<div class="product-box-desc">
+						<div class="content-product-right col-sm-6 col-xs-12">	
+							<div class="product-box-desc" style="padding-left: 0; margin-bottom: 0;">
 								<?php
-									echo '<p>Категория: <a href ="category?id='.$product['idCategory'].'">'.$product['categoryName'].'</a></p>';
-									echo '<p>Продавец: <a href ="user?id='.$product['sellerId'].'">'.$product['username'].'</a></p>';
+									echo '<p><h4 id="prodDesc">Категория:</h4> <a href ="category?id='.$product['idCategory'].'" title="Перейти к категории">'.$product['categoryName'].'</a></p>';
+									echo '<p><h4 id="prodDesc">Продавец:</h4> <a href ="user?id='.$product['sellerId'].'" title="Перейти к продавцу">'.$product['username'].'</a></p>';
 								?>
 							</div>
 							<div class="product-label form-group">
-								<div class="product_page_price price" itemprop="offerDetails" itemscope="" itemtype="http://data-vocabulary.org/Offer">
-									<?php
-										echo '<h1>Цена: </h1><span class="price-new" itemprop="price" style="display:block; height:45px;">'.$product['price'].' €</span>';
-									?>
-								</div>
 								<div>
-									<h3>Описание: </h3>
+									<h4 id="prodDesc">Описание: </h4>
 									<?php
-										echo '<p>'.$product['description'].'</p>';
+										echo '<span>'.$product['description'].'</span>';
 									?>
 
-									<input type="text" name="sellerId" value="<?php echo $product['sellerId'];?>" class="form-control" style="visibility:hidden;">
+									<div class="product_page_price price" itemprop="offerDetails" itemscope="" itemtype="http://data-vocabulary.org/Offer">
+										<?php
+											echo '<span class="price-new" itemprop="price" style="display:block; margin:20px 0;">'.$product['price'].' €</span>';
+										?>
+									</div>
+									<input type="text" name="sellerId" value="<?php echo $product['sellerId'];?>" class="form-control" style="display:none;">
 								</div>
 							</div>
 						</div>

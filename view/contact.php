@@ -1,5 +1,5 @@
 <!-- new view for contact-------------------------- -->
-
+<?php ob_start() ?>
 
 	<div class="main-container container" style="margin-top:0;">
 		<ul class="header-main ">
@@ -13,8 +13,8 @@
 					<h2>Контакт</h2>
 				</div>
 				<iframe src="https://maps.google.com/maps?q=johvi%20kutseh&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-				<div class="info-contact clearfix" style="margin-top: 50px;">
-					<div class="col-lg-4 col-sm-4 col-xs-12 info-store" style="width: 50%;">
+				<div class="info-contact clearfix">
+					<div class="col-lg-4 col-sm-4 col-xs-12 info-store" id="adress">
 						<div class="row">
 							<div class="name-store">
 								<h3>Rosebud Shop</h3>
@@ -39,20 +39,26 @@
 					<?php
 						if (!isset($message)) {
 					?>
-					<div class="col-lg-8 col-sm-8 col-xs-12 contact-form">
+					<div class="col-lg-8 col-sm-8 col-xs-12 contact-form" id="contactForm">
 						<form action="contactSend" method="post" class="form-horizontal">
 							<fieldset>
-								<legend>Контактная форма</legend>
+								<h3>Контактная форма</h3>
+								<div class="form-group required">
+									<label class="col-sm-2 control-label" for="input-email">Тема сообщения</label>
+									<div class="col-sm-10">
+										<input type="text" name="subject"  id="input-subject" class="form-control" placeholder="Тема" autofocus required>
+									</div>
+								</div>
 								<div class="form-group required">
 									<label class="col-sm-2 control-label" for="input-name">Ваше имя</label>
 									<div class="col-sm-10">
-										<input type="text" name="name" value="" id="input-name" class="form-control" placeholder="Ваше имя" autofocus required>
+										<input type="text" name="name"  id="input-name" class="form-control" placeholder="Ваше имя" autofocus required>
 									</div>
 								</div>
 								<div class="form-group required">
 									<label class="col-sm-2 control-label" for="input-email">Электронная почта</label>
 									<div class="col-sm-10">
-										<input type="text" name="email" value="" id="input-email" class="form-control" placeholder="Электронная почта" autofocus required>
+										<input type="email" name="email"  id="input-email" class="form-control" placeholder="Электронная почта" autofocus required>
 									</div>
 								</div>
 								<div class="form-group required">

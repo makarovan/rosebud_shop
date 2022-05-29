@@ -6,11 +6,14 @@ session_start();
 	include_once 'modelAdmin/ModelCategory.php';
 	include_once 'modelAdmin/ModelProducts.php';
 	include_once 'modelAdmin/ModelUsers.php';
+	include_once 'modelAdmin/ModelOrders.php';
 
 	include_once 'controllerAdmin/ControllerAdmin.php';
+	include_once 'ControllerAdmin/ControllerOrders.php';
 	include_once 'controllerAdmin/ControllerProducts.php';
 	include_once 'ControllerAdmin/ControllerCategory.php';
 	include_once 'ControllerAdmin/ControllerUsers.php';
+	
 
 	include'routeAdmin/routing.php';
 	echo $response;

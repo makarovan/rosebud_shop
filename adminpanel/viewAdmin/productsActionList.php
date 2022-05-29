@@ -2,7 +2,7 @@
 ob_start();
 ?>
 
-<h2>Products</h2>
+<h2>Товары</h2>
 <div class="table-responsive">
 	<table class="table table-bordered">
 		<thead>

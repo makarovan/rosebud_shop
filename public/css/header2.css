@@ -94,7 +94,8 @@ BLOCK HEADER
       line-height: 16px;
       border: none; }
   .header-top .header-top-right {
-    float: right; }
+    float: right; 
+  width: 100%;}
     .header-top .header-top-right #TabBlock-1 {
       float: right;
       margin: 0; }
@@ -316,4 +317,10 @@ BLOCK HEADER
   .table > tbody > tr > td {
     padding: 3px; } }
 
+
+@media (max-width: 390px) {
+  #sosearchpro{
+		padding-top:0;
+	}
+}
 /*# sourceMappingURL=header2.css.map */

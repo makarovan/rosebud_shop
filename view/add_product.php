@@ -30,13 +30,13 @@ ob_start();
 
 
         <form action="addProductResult" method="POST" enctype="multipart/form-data">	
-        	<div class="form-group required" style="overflow: hidden;">					
+        	<div class="form-group" style="overflow: hidden;">					
 		        <label class="col-sm-2 control-label" style="float: left; width: 20%;">Название товара: </label>
 		        <div class="col-sm-10" style="width: 80%;">
 		        	<input type="text" name="name" placeholder="Название" class="form-control" required>
 		        </div>
 		    </div>
-		    <div class="form-group required" style="overflow: hidden;">
+		    <div class="form-group" style="overflow: hidden;">
 		        <label class="col-sm-2 control-label" style="float: left; width: 20%;">Категория: </label>
 		        <div class="col-sm-10" style="width: 80%;">
 			        <select name="category" id="" class="form-control">
@@ -48,19 +48,19 @@ ob_start();
 					</select>
 				</div>
 			</div>
-			<div class="form-group required" style="overflow: hidden;">
+			<div class="form-group" style="overflow: hidden;">
 				<label class="col-sm-2 control-label" style="float: left; width: 20%;">Описание товара: </label>
 				<div class="col-sm-10" style="width: 80%;">
 					<textarea name="description" placeholder='Описание' class="form-control" required></textarea>
 				</div>
 			</div>
-			<div class="form-group required" style="overflow: hidden;">
+			<div class="form-group" style="overflow: hidden;">
 				<label class="col-sm-2 control-label" style="float: left; width: 20%;">Цена: </label>
 				<div class="col-sm-10" style="width: 80%;">
 					<input type="number" name="price" step="0.01" min="0" placeholder="Цена" class="form-control" required>
 				</div>
 			</div>
-			<div class="form-group required" style="overflow: hidden;">
+			<div class="form-group" style="overflow: hidden;">
 				<label class="col-sm-2 control-label" style="float: left; width: 20%;">Изображение: </label>
 				<div class="col-sm-10" style="width: 80%;">
 					<input type="file" name="img"  class="form-control" required>

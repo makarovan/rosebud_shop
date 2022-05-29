@@ -4,8 +4,6 @@ ob_start();
 
 <div class="col-xs-9" style="float: left; width: 80%;">
         <h1 class="box-title">Изменить заказ</h4>
-        <p>1 - да<br>
-        0 - нет</p>
         <?php
         	if (isset($result)) {
         		if ($result==true) {
@@ -13,7 +11,7 @@ ob_start();
         			<div class="alert alert-success"><i class="fa fa-check-circle"></i>
 						<strong>Заказ изменен.</strong>
 						<?php
-							echo '<a href="orders?id='.$_SESSION['userId'].'">Все заказы</a>';
+							echo '<a href="orders?id='.$_SESSION['userId'].'">Все продажи</a>';
 						?>
         			</div>
        	<?php
@@ -23,7 +21,7 @@ ob_start();
 	        		<div class="alert alert-warning"><i class="fa fa-warning"></i>
 						<strong>Ошибка изменения заказа</strong>
 						<?php
-							echo '<a href="orders?id='.$_SESSION['userId'].'"> Все заказы</a>';
+							echo '<a href="orders?id='.$_SESSION['userId'].'"> Все продажи</a>';
 						?>
 	        		</div>
         <?php
@@ -34,32 +32,32 @@ ob_start();
 
 
         <form action="changeOrderResult?id=<?php echo $order['idOrder']; ?>" method="POST" enctype="multipart/form-data">	
-        	<div class="form-group required" style="overflow: hidden;">					
+        	<div class="form-group" style="overflow: hidden;">					
 		        <label class="col-sm-2 control-label" style="float: left; width: 20%;">Название товара: </label>
 		        <div class="col-sm-10" style="width: 80%;">
 		        	<input type="text" name="name" value="<?php echo $order['name'];?>" class="form-control" readonly>
 		        </div>
 		    </div>
-			<div class="form-group required" style="overflow: hidden;">					
+			<div class="form-group" style="overflow: hidden;">					
 		        <label class="col-sm-2 control-label" style="float: left; width: 20%;">Покупатель: </label>
 		        <div class="col-sm-10" style="width: 80%;">
 		        	<input type="text" name="username" value="<?php echo $order['username'];?>" class="form-control" readonly>
 		        </div>
 		    </div>
-			<div class="form-group required" style="overflow: hidden;">
+			<div class="form-group" style="overflow: hidden;">
 				<label class="col-sm-2 control-label" style="float: left; width: 20%;">Цена: </label>
 				<div class="col-sm-10" style="width: 80%;">
 					<input type="number" name="price" value="<?php echo $order['price'];?>" class="form-control" readonly>
 				</div>
 			</div>
-			<div class="form-group required" style="overflow: hidden;">
+			<div class="form-group" style="overflow: hidden;">
 				<label class="col-sm-2 control-label" style="float: left; width: 20%;">Бронь: </label>
 				<div class="col-sm-10" style="float:left; width: 80%;">
 					<select name="booked" class="form-control">
 						<?php
 						switch ($order['payed']) {
 								case '1':
-									echo '<option value="1">Товар был оплачен</option>';
+									echo '<option value="1">Товар оплачен</option>';
 									break;
 								case '0':
 									switch ($order['booked']) {
@@ -94,7 +92,7 @@ ob_start();
 					</select>
 				</div>
 			</div>
-			<div class="form-group required" style="overflow: hidden;">
+			<div class="form-group" style="overflow: hidden;">
 				<label class="col-sm-2 control-label" style="float: left; width: 20%;">Оплачено: </label>
 				<div class="col-sm-10" style="width: 80%;">
 					<?php 
@@ -103,7 +101,7 @@ ob_start();
 					?>
 				</div>
 			</div>
-			<div class="form-group required" style="overflow: hidden;"> 
+			<div class="form-group" style="overflow: hidden;"> 
 				<label class="col-sm-2 control-label" style="float: left; width: 20%;">Оплата получена: </label>
 				<div class="col-sm-10" style="width: 80%;">
 					<select name="gotPayment" class="form-control">
@@ -152,7 +150,7 @@ ob_start();
 					</select>
 				</div>
 			</div>
-			<div class="form-group required" style="overflow: hidden;">
+			<div class="form-group" style="overflow: hidden;">
 				<label class="col-sm-2 control-label" style="float: left; width: 20%;">Отправлено: </label>
 				<div class="col-sm-10" style="width: 80%;">
 					<select name="delivered" class="form-control">
@@ -203,7 +201,7 @@ ob_start();
 					</select>
 				</div>
 			</div>
-			<div class="form-group required" style="overflow: hidden;">
+			<div class="form-group" style="overflow: hidden;">
 				<label class="col-sm-2 control-label" style="float: left; width: 20%;">Получено покупателем: </label>
 				<div class="col-sm-10" style="width: 80%;">
 					<?php 

@@ -71,7 +71,7 @@
 										<div class="product-layout">
 											<div class="product-item-container">
 												<div class="left-block">
-													<div class="product-image-container  second_img " title="Перейти к товару">
+													<div class="product-image-container second_img " title="Перейти к товару">
 														<?php
 														echo '<a href="detail?id='.$product['idProduct'].'" class="product-img"><img src="img/'.$product['img'].'"></a>';
 														?>

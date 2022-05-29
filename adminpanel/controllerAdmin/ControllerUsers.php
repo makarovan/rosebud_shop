@@ -7,7 +7,7 @@ class ControllerUsers{
 	}
 
 	public static function editUserForm($id){
-		$user = ModelUsers::getUserDetail($id); //одна новость
+		$user = ModelUsers::getUserDetail($id); 
 		include_once('viewAdmin/userEditForm.php');
 	}
 
@@ -18,8 +18,5 @@ class ControllerUsers{
 
 
 }
-
-
-
 
 ?>

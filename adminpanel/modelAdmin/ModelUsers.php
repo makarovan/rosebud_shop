@@ -29,8 +29,5 @@ class ModelUsers{
 		}//isset post save
 	return $result;
 	} //fucn
-
-
-
 }
 ?>

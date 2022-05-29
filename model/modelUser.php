@@ -63,8 +63,8 @@ class modelUser{
 			if (!$email) {
 				$errorString.="Неправильный эмайл<br>";
 			}
-			if (!$password || !$confirm || mb_strlen($password)<3) {
-				$errorString.="Пароль должен быть больше 3 символов<br>";
+			if (!$password || !$confirm || mb_strlen($password)<6) {
+				$errorString.="Пароль должен быть меньше 6 символов<br>";
 			}
 			if ($password!=$confirm) {
 				$errorString.="Пароли не совпадают<br>";
@@ -98,7 +98,20 @@ class modelUser{
 	}
 
 	public static function getUsersProducts($id){
-		$sql = "SELECT products.*, users.* from products, users where `products`.sellerId = `users`.idUser And `products`.sellerId =".$id." order by `products`.idProduct DESC";
+		$sql = "SELECT products.idProduct, products.name, products.sellerId, products.img, products.price, users.idUser, users.username 
+				from products, users 
+				where products.sellerId = users.idUser 
+				and idProduct not in (select orders.productId from orders) 
+				and `products`.sellerId = `users`.idUser 
+				and `products`.sellerId =".$id." 
+				UNION 
+				SELECT products.idProduct, products.name, products.sellerId, products.img, products.price, users.idUser, users.username 
+				from products, users, orders 
+				where orders.productId = products.idProduct 
+				and products.sellerId = users.idUser 
+				and `products`.sellerId = `users`.idUser 
+				and `products`.sellerId =".$id." 
+				and orders.booked = 0";
 		$database = new database();
 		$products = $database->getAll($sql);
 		return $products;
@@ -328,28 +341,28 @@ class modelUser{
 		$rows = $database->getAll($sql);return $rows;
 	}
 
-	public static function changeRole($id){
-		//$idUser = $_SESSION['userId'];
-		$sql = "SELECT users.role from users where `users`.idUser = $id";
-		$database = new database();
-		$row = $database->getOne($sql);
-		return $row;
-	}
+	// public static function changeRole($id){
+	// 	//$idUser = $_SESSION['userId'];
+	// 	$sql = "SELECT users.role from users where `users`.idUser = $id";
+	// 	$database = new database();
+	// 	$row = $database->getOne($sql);
+	// 	return $row;
+	// }
 
-	public static function changeRoleResult($id){
-		$result = false;
-		if (isset($_POST['save'])) {
-			if (isset($_POST['role'])) {
-				$role = $_POST['role'];
-				$sql = "UPDATE `users` SET role = '$role'  WHERE `users`.idUser = $id";
-				$database = new database();
-				$item = $database -> executeRun($sql);
-				$_SESSION['role'] = $role; //обновляем роль в сессии, чтоб не наджо было перезаходить
-				$result = true;
-			}//if role
-		}//save
-		return $result;
-	}
+	// public static function changeRoleResult($id){
+	// 	$result = false;
+	// 	if (isset($_POST['save'])) {
+	// 		if (isset($_POST['role'])) {
+	// 			$role = $_POST['role'];
+	// 			$sql = "UPDATE `users` SET role = '$role'  WHERE `users`.idUser = $id";
+	// 			$database = new database();
+	// 			$item = $database -> executeRun($sql);
+	// 			$_SESSION['role'] = $role; //обновляем роль в сессии, чтоб не наджо было перезаходить
+	// 			$result = true;
+	// 		}//if role
+	// 	}//save
+	// 	return $result;
+	// }
 
 	public static function editUserResult($id){
 		$result = array(false, "Не введены обязательные данные.");

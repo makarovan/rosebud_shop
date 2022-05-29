@@ -3,30 +3,30 @@
 ?>
 
 
-<div class="main-container container" style="margin-top: 0px; float: left; width: 80%;">
-	<span style="width:87%; display: block; margin: auto;margin-top: 20px;">
-		<div style="width: 60%; float: left;">
-			<?php
+<div class="main-container container" id="accContainer">
+	<span id="accSpan">
+		<?php
 				echo '<h1 style="margin-top: 0;">'.$acc['username'].'</h1>
+		<div style="width: 60%; float: left;">
 				<div style="padding-left: 1%;">';
-					echo '<p>email: '.$acc['email'].'</p>';
-					echo '<p>tel: '.$acc['tel'].'</p>';
-					echo '<p>Full name: '.$acc['fullName'].'</p>
+					echo '<p>Эмайл: '.$acc['email'].'</p>';
+					echo '<p>Телефон: '.$acc['tel'].'</p>';
+					echo '<p>Имя: '.$acc['fullName'].'</p>
 				</div>';
 			?>
 		</div>
 		<!-- <div style="width: 25%; margin-left: 5%; overflow: hidden;"> -->
 		
+			
+		<div class="col-sm-4" style="width: 35%; margin-left: 5%; overflow: hidden;">
+			<h5>Описание продавца:</h5>
 			<?php
-			if ($_SESSION['role']==3){
-				echo '<div class="col-sm-4" style="width: 35%; margin-left: 5%; overflow: hidden;">
-				<h5>Описание продавца:</h5>';
 				echo '<p>'.$acc['userDescription'].'</p>';
 			?>
 		</div>
 	</span>
 	<div class="row" style="margin-bottom: 15px;">
-		<div id="content" class="col-md-9 col-sm-8  col-xs-12" style="margin-left: 50px;">
+		<div id="content" class="col-md-9 col-sm-8  col-xs-12" id="accProducts">
 			<div class="digital">
 				<div class="row">
 					<div class=" col-sm-12">
@@ -67,9 +67,7 @@
 			</div>
 		</div>
 	</div>
-	<?php
-	}
-	?>
+
 </div>
 
 <?php

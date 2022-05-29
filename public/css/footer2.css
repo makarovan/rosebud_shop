@@ -274,4 +274,17 @@
   .footer-bottom-block .text-footer-bot {
     float: none; } }
 
+
+@media (max-width: 390px) {
+  footer .collapseb-block{
+		margin-right: 3% !important;
+	}
+	#footerColumn{
+		overflow: hidden;
+	}
+	footer .box-extras{
+		width: 100% !important;
+		float: none !important;
+	}
+}
 /*# sourceMappingURL=footer2.css.map */

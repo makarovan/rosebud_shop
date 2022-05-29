@@ -10,6 +10,25 @@ elseif ($path == 'logout'){
 	$response = ControllerAdmin::logoutAdmin();
 }
 
+//список заказов
+elseif ($path == 'ordersAction') {
+	$response = ControllerOrders::ordersList();
+}
+elseif($path == 'editOrder'){
+	if (isset($_GET['id'])) {
+		$response = ControllerOrders::editOrderForm($_GET['id']);
+	}else{
+		$response = ControllerAdmin::error404();
+	}
+}
+elseif ($path =='editOrderResult') {
+	if (isset($_GET['id'])) {
+		$response = ControllerOrders::editOrderResult($_GET['id']);
+	}else{
+		$response = ControllerAdmin::error404();
+	}
+}
+
 //товары
 elseif($path == 'productsAction'){
 	$response = ControllerProducts::productsList();
