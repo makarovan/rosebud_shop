@@ -8,14 +8,14 @@
 			<li><a href="changePass">Изменить пароль</a>
 			<li><a href="messages">Личные сообщения</a></li>
 			<!-- <li><a href="wishlist.html">Wish List</a></li>-->
-			<li><a href="myOrders">Мои заказы</a></li>
+			<li><a href="myOrders">Мои покупки</a></li>
 			<br><hr>
 			<h3>Кабинет продавца</h3>
 			<?php
 				if ($_SESSION['role'] == 3){
 					echo '<li><a href="my_products">Мои товары</a></li>
 					<li><a href="add_product">Добавить товар</a></li>
-					<li><a href="orders">Заказы</a></li>';
+					<li><a href="orders">Мои продажи</a></li>';
 				}
 				else{}
 			?>

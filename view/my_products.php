@@ -8,7 +8,7 @@
 <div class="row">
 <?php
 foreach ($products as $product) {
-// <div style="width: 20%; float: left; margin-right: 30px;height: 350px;">
+ <div style="width: 20%; float: left; margin-right: 30px;height: 350px;">
 	echo '<div style="width:25%; float:left; padding: 30px 30px 0 15px; text-align:center;">
 		<div class="product-layout">
 			<div class="product-item-container">

@@ -35,7 +35,10 @@
 	padding: 0;
 	width: 80%;
 }
-
+#searchButton{
+	background: #FF857C;
+	border: #FF857C;
+}
 
 @media (max-width: 1000px) {
 	.header-center .navbar-logo{

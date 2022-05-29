@@ -5,7 +5,7 @@ ob_start();
 	if (isset($resultLogIn) && $resultLogIn ==true) {//получает что результат не равен тру
 		echo '<div class="alert alert-success">
 					<i class="fa fa-check-circle"></i>               
-		 			Вход прошел успешно. Привет,'.$_SESSION['name'].'
+		 			Вход прошел успешно. Привет, '.$_SESSION['name'].'!
 		 	  </div>';
 	}elseif (isset($resultLogIn) && $resultLogIn==false) {
 		echo '<div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i>Ошибка входа</div>';
@@ -51,7 +51,7 @@ ob_start();
 
 						<!-- registration -->
 						<form action="registerResult" method="POST" id="registrationForm">
-							<div class="well" style="min-height: auto;">
+							<div class="well"  style="min-height: auto;">
 								<h2><i class="fa fa-file-o" aria-hidden="true"></i> Регистрация</h2>
 								<p>Создав аккаунт, вы сможете совершать покупки с удобством, получать информацию о статусе вашего заказа и выставлять товары на продажу.</p>
 							</div>

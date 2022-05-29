@@ -7,15 +7,6 @@ if (isset($categoryOne)) {
 if (isset($text)) {
 	$title = 'Поиск по запросу: '.$text;
 }
-
-// if (!empty($_GET['min'])) {
-//     $min = $_GET['min'];
-// }
-
-// if (!empty($_GET['max'])) {
-//     $max = $_GET['max'];
-// }
-
 ?>
 
 <div class="main-container container" style="margin-top: 0;">
@@ -36,47 +27,52 @@ if (isset($text)) {
 						<!-- - - - - - - - - - - - - - Category filter - - - - - - - - - - - - - - - - -->
 						<h3>Расширенный поиск</h3>
 						<form method="GET" action="filter">
-							
+
 							<legend>Название:</legend>
 							<div id="search0" class="search input-group">
-								<input class="autosearch-input form-control" type="text" value="" size="50" autocomplete="off" name="text">
+								<input class="autosearch-input form-control" type="text" value="" size="50"
+									autocomplete="off" name="text">
 							</div>
-										
-								<legend>Категории:</legend>
-								<select name="categoryId" style="width: 100%;" class="form-control">
-									<option value="0">Все категории</option>
-									<?php
+
+							<legend>Категории:</legend>
+							<select name="categoryId" style="width: 100%;" class="form-control">
+								<option value="0">Все категории</option>
+								<?php
 										foreach ($categories as $category) {
 											echo '<option value="'.$category['idCategory'].'">';
 											echo $category['categoryName'].'</option>';
 										}
 									?>
 
-								</select>
+							</select>
 
-								<legend>Цена:</legend>
-								<div class="range">
-									<input type="number" name="minPrice" value="10" class="form-control" style="width: 45%; float: left; height: 28px; "> 
-									<p style="float: left; width: 10%; padding: 5px 9px;"> - </p>
-									<input type="number" name="maxPrice" value="100" class="form-control" style="width: 45%; float: left; height: 28px;">
-								</div>
-							<div style="padding-right: 100px;">
-								<button type="submit" class="btn btn-primary btn-md" style="width:220px;"><i class="fa fa-search"></i> Поиск</button>
+							<legend>Цена:</legend>
+							<div class="range">
+								<input type="number" name="minPrice" value="10" class="form-control"
+									style="width: 45%; float: left; height: 28px; ">
+								<p style="float: left; width: 10%; padding: 5px 9px;"> - </p>
+								<input type="number" name="maxPrice" value="100" class="form-control"
+									style="width: 45%; float: left; height: 28px;">
 							</div>
-							
+							<div style="padding-right: 100px;">
+								<button type="submit" class="btn btn-primary btn-md" id="searchButton" style="width:220px;"><i
+										class="fa fa-search"></i> Поиск</button>
+							</div>
+
 						</form>
-					</div><!--/ .table_layout -->
+					</div>
+					<!--/ .table_layout -->
 				</div>
 			</div>
 		</aside>
-					<!--Left Part End -->
+		<!--Left Part End -->
 
-					<!--Middle Part Start-->
-					<div id="content" class="col-md-9 col-sm-8 type-2" style="width: 70%; margin-top:-10px;">
-						<div class="products-category">
-							<!--changed listings-->
-							<div class="products-list grid">
-								<?php
+		<!--Middle Part Start-->
+		<div id="content" class="col-md-9 col-sm-8 type-2" style="width: 70%; margin-top:-10px;">
+			<div class="products-category">
+				<!--changed listings-->
+				<div class="products-list grid">
+					<?php
 									if (count($rows)>0) {
 										foreach ($rows as $row) {
 											echo'<div class="product-layout">
@@ -114,12 +110,13 @@ if (isset($text)) {
 
 
 
-							</div>				<!--// End Changed listings-->
-						</div>
-					</div>
 				</div>
-				<!--Middle Part End-->
+				<!--// End Changed listings-->
 			</div>
+		</div>
+	</div>
+	<!--Middle Part End-->
+</div>
 <?php
 $content = ob_get_clean();
 include "view/templates/layout.php";

@@ -31,7 +31,7 @@
 														echo '<h4 title="Перейти к продавцу"><a href="user?id='.$row['sellerId'].'">'.$row['username'].'</a></h4>';
 														?>	
 														<div class="price">
-															<span class="price-new"><?php print ($row['price'])?></span>
+															<span class="price-new"><?php print ($row['price'])?> &euro;</span>
 														</div>
 													</div>
 												</div>
@@ -84,7 +84,7 @@
 														echo '<h4><a href="user?id='.$product['sellerId'].'">'.$product['username'].'</a></h4>';
 														?>		
 														<div class="price">
-															<span class="price-new"><?php print ($product['price'])?> </span>
+															<span class="price-new"><?php print ($product['price'])?> &euro;</span>
 														</div>
 													</div>
 												</div>

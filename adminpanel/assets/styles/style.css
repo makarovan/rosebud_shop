@@ -549,16 +549,16 @@ h4 strong {
   margin-left: 8px;
 }
 .btn-primary {
-  background: #304ffe;
+  background: #FF857C !important;
 }
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:focus {
-  background: #1e3ded !important;
+  background: #FF857C !important;
 }
 .btn-primary.btn-bordered {
-  border-color: #304ffe;
-  color: #304ffe;
+  border-color: #FF857C;
+  color: #FF857C;
 }
 .btn-primary.btn-bordered:hover,
 .btn-primary.btn-bordered:active,

@@ -11,9 +11,9 @@ class database {
     function __construct() {
 
         $this->host = 'localhost';//hostname
-        $this->user = 'root';//username
-        $this->password = '';//password
-        $this->baseName = 'rosebud_shop';//database name!!!!
+        $this->user = 'root';//username- root
+        $this->password = '';//password -empty
+        $this->baseName = 'rosebud_shop';//database name!!!! - rosebud_shop
         $this->connect();//метод - функция соединение с БД
     }
 
