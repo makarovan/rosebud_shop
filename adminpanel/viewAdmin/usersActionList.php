@@ -22,7 +22,7 @@ ob_start();
 					<tr>
 						<th style="text-transform: none;" scope="row"><?php echo $user['idUser']; ?></th>
 						<th style="text-transform: none;" scope="row"><?php echo $user['username']; ?></th>
-						<th style="text-transform: none;" scope="row"><?php echo $user['roleName']; ?></th>
+						<th style="text-transform: none;" scope="row"><?php echo $user['rolename']; ?></th>
 						<th style="text-transform: none;" scope="row"><?php echo $user['email']; ?></th>
 						<th style="text-transform: none;" scope="row"><?php echo $user['userDescription']; ?></th>
 						<th>
