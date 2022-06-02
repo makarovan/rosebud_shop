@@ -8,7 +8,7 @@
 		</ul>
 			
 		<div class="row">
-			<div id="content" class="col-sm-12">
+			<div id="content" class="col-sm-12" style="width:85%;">
 				<div class="page-title">
 					<h2>Контакт</h2>
 				</div>
@@ -44,26 +44,26 @@
 							<fieldset>
 								<h3>Контактная форма</h3>
 								<div class="form-group required">
-									<label class="col-sm-2 control-label" for="input-email">Тема сообщения</label>
-									<div class="col-sm-10">
+									<label class="col-sm-2 control-label" id="labelContact" for="input-email">Тема сообщения</label>
+									<div class="col-sm-10" id="inputContact">
 										<input type="text" name="subject"  id="input-subject" class="form-control" placeholder="Тема" autofocus required>
 									</div>
 								</div>
 								<div class="form-group required">
-									<label class="col-sm-2 control-label" for="input-name">Ваше имя</label>
-									<div class="col-sm-10">
+									<label class="col-sm-2 control-label" id="labelContact" for="input-name">Ваше имя</label>
+									<div class="col-sm-10" id="inputContact">
 										<input type="text" name="name"  id="input-name" class="form-control" placeholder="Ваше имя" autofocus required>
 									</div>
 								</div>
 								<div class="form-group required">
-									<label class="col-sm-2 control-label" for="input-email">Электронная почта</label>
-									<div class="col-sm-10">
+									<label class="col-sm-2 control-label" id="labelContact" for="input-email">Электронная почта</label>
+									<div class="col-sm-10" id="inputContact">
 										<input type="email" name="email"  id="input-email" class="form-control" placeholder="Электронная почта" autofocus required>
 									</div>
 								</div>
 								<div class="form-group required">
-									<label class="col-sm-2 control-label" for="input-enquiry">Сообщение</label>
-									<div class="col-sm-10">
+									<label class="col-sm-2 control-label" id="labelContact" for="input-enquiry">Сообщение</label>
+									<div class="col-sm-10" id="inputContact">
 										<textarea name="message" rows="10" id="input-enquiry" class="form-control" placeholder="Сообщение" autofocus required></textarea>
 									</div>
 								</div>

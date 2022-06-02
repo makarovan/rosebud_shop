@@ -70,6 +70,59 @@
 #editUserInput{
 	width: 80%;
 }
+#prodList{
+	max-height: 330px;
+}
+#gridList{
+	width: 100%;
+}
+#userDesc{
+	width: 80%;
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+}
+
+#userProd{
+	width: 23%;
+    display: block;
+    float: left;
+    text-align: center;
+    margin: 0 1%;
+}
+#labelContact{
+	text-align: left;
+	display: block;
+	float: none;
+	width: 100%;
+}
+#inputContact{
+	width: 100%;
+}
+#passDiv{
+	float: left;
+	width: 80%;
+}
+#labelPass{
+	float: left;
+	width: 30%;
+}
+#inputPass{
+	width: 70%;
+}
+#orderTable{
+	float: left; 
+	width: 80%;
+}
+#sellerProds{
+	width:80%; 
+	float: left;
+}
+#sellerProd{
+	width: 30%;
+    float: left;
+    margin: 1.5%;
+}
 @media (max-width: 1000px) {
 	li.home a{
 		float: left;
@@ -173,5 +226,39 @@
 	#editUserButton{
 		float: left;
 		margin: 0 5%;
+	}
+	#gridList{
+		width: 100%;
+		display: block !important;
+		margin: 0 auto !important;
+	}
+	#prodList{
+		padding: 30px 0 !important;
+	}
+	#userProd{
+		width:80%;
+		margin: 0 10%;
+	}
+	#passDiv{
+		width: 100%;
+	}
+	#labelPass{
+		width: 100%;
+		float: none;
+	}
+	#inputPass{
+		width: 100%;
+	}
+	#orderTable{
+		width: 100%;
+	}
+	#sellerProds{
+		width: 100%;
+	}
+	#sellerProd{
+		width: 45%;
+		margin: 0 2.5% 20px;
+		display: block;
+		
 	}
 }

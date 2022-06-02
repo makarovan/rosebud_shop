@@ -48,6 +48,8 @@ if (isset($_SESSION['userId']) && isset($_SESSION['role']) && $_SESSION['role']!
 	<link href="../public/css/themecss/so-listing-tabs.css" rel="stylesheet">
 	<link href="../public/css/footer2.css" rel="stylesheet">
 	<link href="../public/css/header2.css" rel="stylesheet">
+	<link rel="stylesheet" href="../public/css/custom.css" type="text/css" />
+	<link rel="stylesheet" href="assets/styles/customAdmin.css" type="text/css" />
 	<link id="color_scheme" href="../public/css/index.css" rel="stylesheet">
 	<!-- <link href="css/responsive.css" rel="stylesheet"> -->
 </head>
@@ -82,7 +84,7 @@ if (isset($_SESSION['userId']) && isset($_SESSION['role']) && $_SESSION['role']!
 						<div class="row">
 							<!-- Logo -->
 							<div class="navbar-logo col-md-3 col-sm-12 col-xs-7">
-								<a href="./index"><img src="../img/demo/logo/logo.png" title="Your Store" alt="Your Store"></a>
+								<a href="../"><img src="../img/demo/logo/logo.png" alt="Rosebud Shop"></a>
 							</div>
 							<!-- //end Logo -->
 
@@ -113,9 +115,9 @@ if (isset($_SESSION['userId']) && isset($_SESSION['role']) && $_SESSION['role']!
 				<!-- Header Bottom -->
 			</header>
 
-			<aside style="width: 20%; margin-left: 5%;">
-				<div class="col-md-6 col-lg-6">
-					<ul class="simple-ul">
+			<aside>
+				<div>
+					<ul>
 						<li><a href="usersAction">Пользователи</a></li>
 						<li><a href="categoryAction">Категории</a></li>
 						<li><a href="productsAction">Товары</a></li>
@@ -123,7 +125,7 @@ if (isset($_SESSION['userId']) && isset($_SESSION['role']) && $_SESSION['role']!
 					</ul>
 				</div>
 			</aside>
-			<main style="width: 60%; margin-left: 10%; float: left;">
+			<main >
 				<?php if (isset($content)) echo $content; ?>
 			</main>
 		</div>

@@ -27,7 +27,7 @@ ob_start();
 						<th style="text-transform: none;" scope="row"><?php echo $user['userDescription']; ?></th>
 						<th>
 							<button class="btn btn-warning btn-sm btn-block">
-								<a href='editUser?id=<?php echo $user['idUser'];?>' style='color: white'>edit <span class="glyphicon glyphicon-edit"></span></a>
+								<a href='editUser?id=<?php echo $user['idUser'];?>' style='color: white'>Изменить <span class="glyphicon glyphicon-edit"></span></a>
 							</button>	
 						</th>
 					</tr>

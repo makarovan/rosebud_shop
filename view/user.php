@@ -12,7 +12,7 @@
 ?>
 
 <div class="main-container container" style="margin-top: 0px;">
-	<span style="width: 80%; display: block; margin: auto;margin-top: 20px;">
+	<span id="userDesc" >
 		<div style="width: 60%; float: left;">
 			<?php
 				echo '<h1 style="margin-top: 0;">'.$row['username'].'</h1>
@@ -31,8 +31,8 @@
 			?>
 		</div>
 	</span>
-	<div class="row" style="margin-bottom: 15px;">
-		<div id="content" class="col-md-9 col-sm-8  col-xs-12" style="margin-left: 50px;">
+	<div class="row">
+		<div id="content" class="col-md-9 col-sm-8  col-xs-12">
 			<div class="digital">
 				<div class="row">
 					<div class=" col-sm-12">
@@ -45,11 +45,11 @@
 								aria-expanded="false"
 								style="height: 0px;">
 							<div class="panel-body">
-								<div class="products-list grid">
+								<div class="products-list grid" style="width:100%;">
 									<div class="row">
 									<?php
 										foreach ($products as $row) {
-											echo'<div class="product-layout" style="max-width:25%; float:left; padding: 30px 15px 0 15px; text-align:center;">
+											echo'<div class="product-layout" id="userProd">
 													<div class="product-item-container">
 														<div class="left-block">
 															<div class="product-image-container  second_img " title="Перейти к товару">';

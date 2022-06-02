@@ -1,0 +1,32 @@
+main{
+    width: 40%; 
+    float: left;
+}
+aside{
+    width: 10%; 
+    margin-left: 20%;
+    float: left;
+}
+@media (max-width: 390px) {
+    main{
+        width: 90%;
+        margin: 0 5%;
+        float: none;
+    }
+    aside{
+        float: none;
+        display: block;
+        margin: 0;
+        overflow: hidden;
+        width: 100%;
+    }
+    aside div ul{
+         float: left; 
+         list-style: none;
+    }
+    aside div ul li{
+        float:left;
+        display: block;
+        margin: 0 20%;
+    }
+}

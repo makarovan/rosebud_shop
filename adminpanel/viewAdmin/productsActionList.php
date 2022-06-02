@@ -24,8 +24,12 @@ ob_start();
 						<th style="text-transform: none;" scope="row"><?php echo $row['name']; ?></th>
 						<th style="text-transform: none;" scope="row"><?php echo $row['username']; ?></th>
 						<th style="text-transform: none;" scope="row"><?php echo $row['categoryName']; ?></th>
-						<th style="text-transform: none;" scope="row"><?php echo $row['price']; ?></th>
-						<th style="text-transform: none;"> <a href="editProduct?id=<?php echo $row['idProduct']; ?>">изменить</a> </th>
+						<th style="text-transform: none;" scope="row"><?php echo $row['price']; ?> &euro;</th>
+						<th> 
+							<button class="btn btn-warning btn-sm btn-block">
+									<a href='editProduct?id=<?php echo $row['idProduct']; ?>' style='color: white'>Изменить <span class="glyphicon glyphicon-edit"></span></a>
+							</button>	
+						</th>
 					</tr>
 			<?php
 				}		

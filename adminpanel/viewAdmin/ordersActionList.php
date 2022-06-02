@@ -3,7 +3,7 @@ ob_start();
 ?>
 
 <h2>Заказы</h2>
-<div class="table-responsive">
+<div class="table-responsive" >
 	<table class="table table-bordered">
 		<thead>
 			<tr>
@@ -24,9 +24,9 @@ ob_start();
 						<th style="text-transform: none;" scope="row"><?php echo $order['sellerId']; ?></th>
 						<th style="text-transform: none;" scope="row"><?php echo $order['productId']; ?></th>
 						<th>
-							
-							<a href='editOrder?id=<?php echo $order['idOrder'];?>'>Изменить</a>
-							
+							<button class="btn btn-warning btn-sm btn-block">
+									<a href='editOrder?id=<?php echo $order['idOrder'];?>' style='color: white'>Изменить <span class="glyphicon glyphicon-edit"></span></a>
+							</button>		
 						</th>
 					</tr>
 			<?php

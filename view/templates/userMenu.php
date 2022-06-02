@@ -6,7 +6,7 @@
 			<li><a href="editUser">Изменить данные</a></li>
 			<!-- <li><a href="changeRole">Изменить роль</a> -->
 			<li><a href="changePass">Изменить пароль</a>
-			<li><a href="messages">Личные сообщения</a></li>
+			<!-- <li><a href="messages">Личные сообщения</a></li> -->
 			<li><a href="myOrders">Мои покупки</a></li>
 			<br><hr>
 			<h3>Кабинет продавца</h3>

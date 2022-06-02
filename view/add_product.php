@@ -2,7 +2,7 @@
 ob_start();
 ?>
 
-<div class="col-xs-9" style="float: left; width: 80%;">
+<div class="col-xs-9" id="passDiv" >
         <h1 class="box-title">Добавить товар</h4>
         <?php
         	if (isset($results)) {
@@ -31,14 +31,14 @@ ob_start();
 
         <form action="addProductResult" method="POST" enctype="multipart/form-data">	
         	<div class="form-group" style="overflow: hidden;">					
-		        <label class="col-sm-2 control-label" style="float: left; width: 20%;">Название товара: </label>
-		        <div class="col-sm-10" style="width: 80%;">
+		        <label class="col-sm-2 control-label" id="labelPass">Название товара: </label>
+		        <div class="col-sm-10" id="inputPass">
 		        	<input type="text" name="name" placeholder="Название" class="form-control" required>
 		        </div>
 		    </div>
 		    <div class="form-group" style="overflow: hidden;">
-		        <label class="col-sm-2 control-label" style="float: left; width: 20%;">Категория: </label>
-		        <div class="col-sm-10" style="width: 80%;">
+		        <label class="col-sm-2 control-label" id="labelPass">Категория: </label>
+		        <div class="col-sm-10" id="inputPass">
 			        <select name="category" id="" class="form-control">
 			        	<?php
 			        		foreach ($rows as $row) {
@@ -49,20 +49,20 @@ ob_start();
 				</div>
 			</div>
 			<div class="form-group" style="overflow: hidden;">
-				<label class="col-sm-2 control-label" style="float: left; width: 20%;">Описание товара: </label>
-				<div class="col-sm-10" style="width: 80%;">
+				<label class="col-sm-2 control-label" id="labelPass">Описание товара: </label>
+				<div class="col-sm-10" id="inputPass">
 					<textarea name="description" placeholder='Описание' class="form-control" required></textarea>
 				</div>
 			</div>
 			<div class="form-group" style="overflow: hidden;">
-				<label class="col-sm-2 control-label" style="float: left; width: 20%;">Цена: </label>
-				<div class="col-sm-10" style="width: 80%;">
+				<label class="col-sm-2 control-label" id="labelPass">Цена: </label>
+				<div class="col-sm-10" id="inputPass">
 					<input type="number" name="price" step="0.01" min="0" placeholder="Цена" class="form-control" required>
 				</div>
 			</div>
 			<div class="form-group" style="overflow: hidden;">
-				<label class="col-sm-2 control-label" style="float: left; width: 20%;">Изображение: </label>
-				<div class="col-sm-10" style="width: 80%;">
+				<label class="col-sm-2 control-label" id="labelPass">Изображение: </label>
+				<div class="col-sm-10" id="inputPass">
 					<input type="file" name="img"  class="form-control" required>
 				</div>
 			</div>

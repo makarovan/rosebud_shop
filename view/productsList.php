@@ -69,11 +69,11 @@ if (isset($text)) {
 					<div id="content" class="col-md-9 col-sm-8 type-2" style="width: 60%; margin-top:-10px;">
 						<div class="products-category">
 							<!--changed listings-->
-							<div class="products-list grid" style="width:100%;">
+							<div class="products-list grid" id="gridList">
 								<?php
 									if (count($rows)>0) {
 										foreach ($rows as $row) {
-											echo'<div class="product-layout">
+											echo'<div class="product-layout" id="prodList">
 												<div class="product-item-container">
 													<div class="left-block">
 														<div class="product-image-container  second_img " title="Перейти к товару">';

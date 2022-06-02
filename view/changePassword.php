@@ -2,7 +2,7 @@
 	ob_start();
 ?>
 
-<div class="col-xs-9" style="float: left; width: 80%;">
+<div class="col-xs-9" id="passDiv" >
 	<h1>Изменить пароль</h1>
 	<?php
 		if (isset($result)) {
@@ -19,21 +19,21 @@
 	?>
 
 	<form method="POST" action="changePassResult">
-		<div class="form-group required" style="overflow: hidden;">
-			<label for="current_password" class="col-sm-2 control-label" style="float: left; width: 30%;">Старый пароль</label>
-			<div class="col-sm-10" style="width: 70%;">
+		<div class="form-group" style="overflow: hidden;">
+			<label for="current_password" id="labelPass" class="col-sm-2 control-label" >Старый пароль</label>
+			<div class="col-sm-10" id="inputPass">
 				<input type="password" class="form-control" name="currentPassword" >
 			</div>
 		</div>
-		<div class="form-group required" style="overflow: hidden;">
-			<label for="new_password" class="col-sm-2 control-label" style="float: left; width: 30%;">Новый пароль</label>
-			<div class="col-sm-10" style="width: 70%;">
+		<div class="form-group" style="overflow: hidden;">
+			<label for="new_password" id="labelPass" class="col-sm-2 control-label">Новый пароль</label>
+			<div class="col-sm-10" id="inputPass">
 				<input type="password" class="form-control" name="newPassword" >
 			</div>
 		</div>
-		<div class="form-group required" style="overflow: hidden;">
-			<label for="confirm_password" class="col-sm-2 control-label" style="float: left; width: 30%;">Подтвердить новый пароль</label>
-			<div class="col-sm-10" style="width: 70%;">
+		<div class="form-group" style="overflow: hidden;">
+			<label for="confirm_password" id="labelPass" class="col-sm-2 control-label" >Подтвердить новый пароль</label>
+			<div class="col-sm-10" id="inputPass">
 				<input type="password" class="form-control" name="confirmPassword" >
 			</div>
 		</div>

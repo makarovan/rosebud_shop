@@ -3,7 +3,7 @@
 ?>
 
 
-<div class="col-xs-9" style="float: left; width: 80%;">
+<div class="col-xs-9" id="orderTable">
 	<h1 class="text-uppercase">Мои покупки</h1>
 	<div class="table-responsive">
 		<table class="table table-bordered">
